@@ -83,12 +83,12 @@ pip install -r requirements.txt
 ```sh
 airflow db migrate
 airflow users create ^
-  --username arya ^
-  --firstname Vaishnavi ^
-  --lastname Arya ^
+  --username your_username ^
+  --firstname FirstName ^
+  --lastname LastName ^
   --role Admin ^
-  --email vaish231139@gmail.com ^
-  --password secret123
+  --email your_email@example.com ^
+  --password your_secure_password
 ```
 *(On Windows, use `^` for line continuation or put all options on one line.)*
 
