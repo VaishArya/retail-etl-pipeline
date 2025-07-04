@@ -1,0 +1,60 @@
+[2025-07-04T15:05:57.522+0530] {processor.py:157} INFO - Started process (PID=19213) to work on /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:05:57.523+0530] {processor.py:829} INFO - Processing file /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2025-07-04T15:05:57.524+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:57.524+0530] {dagbag.py:536} INFO - Filling up the DagBag from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:05:57.561+0530] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_1', 'dataset_consumes_1_never_scheduled', 'dataset_produces_2', 'dataset_consumes_1_and_2', 'dataset_consumes_unknown_never_scheduled', 'dataset_produces_1']) retrieved from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:05:58.290+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.289+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.301+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.301+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.308+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.308+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.325+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.325+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.333+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.333+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.341+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.340+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.355+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.355+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.362+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.362+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.370+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.370+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.385+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.384+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.392+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.392+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.400+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.399+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.415+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.414+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.422+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.422+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.430+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.430+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.444+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.443+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.450+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.450+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.458+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.458+0530] {manager.py:499} INFO - Created Permission View: %s
+[2025-07-04T15:05:58.458+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.458+0530] {dag.py:2941} INFO - Sync 6 DAGs
+[2025-07-04T15:05:58.472+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.472+0530] {dag.py:2963} INFO - Creating ORM DAG for dataset_produces_2
+[2025-07-04T15:05:58.473+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.472+0530] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_unknown_never_scheduled
+[2025-07-04T15:05:58.473+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.473+0530] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_1_and_2
+[2025-07-04T15:05:58.474+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.474+0530] {dag.py:2963} INFO - Creating ORM DAG for dataset_produces_1
+[2025-07-04T15:05:58.474+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.474+0530] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_1
+[2025-07-04T15:05:58.475+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.475+0530] {dag.py:2963} INFO - Creating ORM DAG for dataset_consumes_1_never_scheduled
+[2025-07-04T15:05:58.483+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.483+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2025-07-04T15:05:58.484+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.484+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2025-07-04T15:05:58.485+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.484+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2025-07-04T15:05:58.485+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.485+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2025-07-04T15:05:58.488+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.487+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2025-07-03T00:00:00+00:00, run_after=2025-07-04T00:00:00+00:00
+[2025-07-04T15:05:58.488+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:58.488+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2025-07-04T15:05:58.526+0530] {processor.py:179} INFO - Processing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py took 1.004 seconds
+[2025-07-04T15:17:32.595+0530] {processor.py:157} INFO - Started process (PID=20573) to work on /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:17:32.596+0530] {processor.py:829} INFO - Processing file /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2025-07-04T15:17:32.597+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.597+0530] {dagbag.py:536} INFO - Filling up the DagBag from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:17:32.641+0530] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_consumes_unknown_never_scheduled', 'dataset_produces_2', 'dataset_produces_1', 'dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_consumes_1_never_scheduled']) retrieved from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:17:32.951+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.951+0530] {dag.py:2941} INFO - Sync 6 DAGs
+[2025-07-04T15:17:32.972+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.972+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2025-07-04T15:17:32.975+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.975+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2025-07-04T15:17:32.976+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.976+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2025-07-04T15:17:32.977+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.977+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2025-07-04T15:17:32.980+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.980+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2025-07-03T00:00:00+00:00, run_after=2025-07-04T00:00:00+00:00
+[2025-07-04T15:17:32.981+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:32.981+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2025-07-04T15:17:33.019+0530] {processor.py:179} INFO - Processing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py took 0.425 seconds
+[2025-07-04T15:20:53.302+0530] {processor.py:157} INFO - Started process (PID=21129) to work on /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:20:53.308+0530] {processor.py:829} INFO - Processing file /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2025-07-04T15:20:53.309+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.309+0530] {dagbag.py:536} INFO - Filling up the DagBag from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:20:53.339+0530] {processor.py:839} INFO - DAG(s) dict_keys(['dataset_produces_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_never_scheduled', 'dataset_consumes_1', 'dataset_produces_2', 'dataset_consumes_1_and_2']) retrieved from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py
+[2025-07-04T15:20:53.575+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.574+0530] {dag.py:2941} INFO - Sync 6 DAGs
+[2025-07-04T15:20:53.595+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.595+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2025-07-04T15:20:53.598+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.598+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2025-07-04T15:20:53.599+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.599+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2025-07-04T15:20:53.600+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.600+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2025-07-04T15:20:53.603+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.603+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_1 to 2025-07-03T00:00:00+00:00, run_after=2025-07-04T00:00:00+00:00
+[2025-07-04T15:20:53.604+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:20:53.604+0530] {dag.py:3722} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2025-07-04T15:20:53.639+0530] {processor.py:179} INFO - Processing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_datasets.py took 0.339 seconds

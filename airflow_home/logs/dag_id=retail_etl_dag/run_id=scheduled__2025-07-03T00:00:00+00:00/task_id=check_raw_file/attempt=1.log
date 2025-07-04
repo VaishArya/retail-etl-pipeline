@@ -1,0 +1,71 @@
+[2025-07-04T15:26:52.223+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T15:26:52.233+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T15:26:52.234+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-07-04T15:26:52.250+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): check_raw_file> on 2025-07-03 00:00:00+00:00
+[2025-07-04T15:26:52.253+0530] {standard_task_runner.py:57} INFO - Started process 21988 to run task
+[2025-07-04T15:26:52.261+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'retail_etl_dag', 'check_raw_file', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/retail_etl_dag.py', '--cfg-path', '/var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T/tmp2iiw1nxo']
+[2025-07-04T15:26:52.265+0530] {standard_task_runner.py:85} INFO - Job 12: Subtask check_raw_file
+[2025-07-04T15:26:52.329+0530] {task_command.py:416} INFO - Running <TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [running]> on host v-macbook-pro.local
+[2025-07-04T15:26:52.425+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retail_etl_dag' AIRFLOW_CTX_TASK_ID='check_raw_file' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T15:26:52.429+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T
+[2025-07-04T15:26:52.431+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'test -f data/raw/OnlineRetail.csv || (echo "Missing data/raw/OnlineRetail.csv. Please download and place it in data/raw/" && exit 1)']
+[2025-07-04T15:26:52.440+0530] {subprocess.py:86} INFO - Output:
+[2025-07-04T15:26:52.452+0530] {subprocess.py:93} INFO - Missing data/raw/OnlineRetail.csv. Please download and place it in data/raw/
+[2025-07-04T15:26:52.454+0530] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-07-04T15:26:52.464+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-07-04T15:26:52.474+0530] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=retail_etl_dag, task_id=check_raw_file, execution_date=20250703T000000, start_date=20250704T095652, end_date=20250704T095652
+[2025-07-04T15:26:52.487+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 12 for task check_raw_file (Bash command failed. The command returned a non-zero exit code 1.; 21988)
+[2025-07-04T15:26:52.517+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-07-04T15:26:52.545+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T15:48:30.451+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T15:48:30.458+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T15:48:30.458+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-07-04T15:48:30.474+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): check_raw_file> on 2025-07-03 00:00:00+00:00
+[2025-07-04T15:48:30.477+0530] {standard_task_runner.py:57} INFO - Started process 25015 to run task
+[2025-07-04T15:48:30.487+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'retail_etl_dag', 'check_raw_file', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/retail_etl_dag.py', '--cfg-path', '/var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T/tmp_vnn4088']
+[2025-07-04T15:48:30.490+0530] {standard_task_runner.py:85} INFO - Job 24: Subtask check_raw_file
+[2025-07-04T15:48:30.547+0530] {task_command.py:416} INFO - Running <TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [running]> on host v-macbook-pro.local
+[2025-07-04T15:48:30.610+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retail_etl_dag' AIRFLOW_CTX_TASK_ID='check_raw_file' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T15:48:30.613+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T
+[2025-07-04T15:48:30.614+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'test -f "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/raw/OnlineRetail.csv" || (echo "Missing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/raw/OnlineRetail.csv. Please download and place it." && exit 1)']
+[2025-07-04T15:48:30.622+0530] {subprocess.py:86} INFO - Output:
+[2025-07-04T15:48:30.628+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-07-04T15:48:30.650+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=retail_etl_dag, task_id=check_raw_file, execution_date=20250703T000000, start_date=20250704T101830, end_date=20250704T101830
+[2025-07-04T15:48:30.699+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-04T15:48:30.726+0530] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T16:04:47.264+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T16:04:47.273+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T16:04:47.274+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-07-04T16:04:47.286+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): check_raw_file> on 2025-07-03 00:00:00+00:00
+[2025-07-04T16:04:47.289+0530] {standard_task_runner.py:57} INFO - Started process 31361 to run task
+[2025-07-04T16:04:47.298+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'retail_etl_dag', 'check_raw_file', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/retail_etl_dag.py', '--cfg-path', '/var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T/tmpsziombf6']
+[2025-07-04T16:04:47.303+0530] {standard_task_runner.py:85} INFO - Job 35: Subtask check_raw_file
+[2025-07-04T16:04:47.359+0530] {task_command.py:416} INFO - Running <TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [running]> on host v-macbook-pro.local
+[2025-07-04T16:04:47.422+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retail_etl_dag' AIRFLOW_CTX_TASK_ID='check_raw_file' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T16:04:47.425+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T
+[2025-07-04T16:04:47.426+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'test -f "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/raw/OnlineRetail.csv" || (echo "Missing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/raw/OnlineRetail.csv. Please download and place it." && exit 1)']
+[2025-07-04T16:04:47.434+0530] {subprocess.py:86} INFO - Output:
+[2025-07-04T16:04:47.441+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-07-04T16:04:47.465+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=retail_etl_dag, task_id=check_raw_file, execution_date=20250703T000000, start_date=20250704T103447, end_date=20250704T103447
+[2025-07-04T16:04:47.511+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-04T16:04:47.539+0530] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-04T16:12:19.102+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T16:12:19.115+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [queued]>
+[2025-07-04T16:12:19.116+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-07-04T16:12:19.132+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): check_raw_file> on 2025-07-03 00:00:00+00:00
+[2025-07-04T16:12:19.135+0530] {standard_task_runner.py:57} INFO - Started process 33139 to run task
+[2025-07-04T16:12:19.152+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'retail_etl_dag', 'check_raw_file', 'scheduled__2025-07-03T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/retail_etl_dag.py', '--cfg-path', '/var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T/tmptyv7j2nv']
+[2025-07-04T16:12:19.157+0530] {standard_task_runner.py:85} INFO - Job 43: Subtask check_raw_file
+[2025-07-04T16:12:19.226+0530] {task_command.py:416} INFO - Running <TaskInstance: retail_etl_dag.check_raw_file scheduled__2025-07-03T00:00:00+00:00 [running]> on host v-macbook-pro.local
+[2025-07-04T16:12:19.296+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retail_etl_dag' AIRFLOW_CTX_TASK_ID='check_raw_file' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-07-03T00:00:00+00:00'
+[2025-07-04T16:12:19.300+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T
+[2025-07-04T16:12:19.301+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'test -f "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/raw/OnlineRetail.csv" || (echo "Missing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/raw/OnlineRetail.csv. Please download and place it." && exit 1)']
+[2025-07-04T16:12:19.310+0530] {subprocess.py:86} INFO - Output:
+[2025-07-04T16:12:19.317+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-07-04T16:12:19.338+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=retail_etl_dag, task_id=check_raw_file, execution_date=20250703T000000, start_date=20250704T104219, end_date=20250704T104219
+[2025-07-04T16:12:19.358+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-04T16:12:19.385+0530] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

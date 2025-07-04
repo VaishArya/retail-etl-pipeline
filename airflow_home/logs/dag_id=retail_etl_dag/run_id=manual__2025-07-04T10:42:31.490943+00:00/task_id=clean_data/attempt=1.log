@@ -1,0 +1,32 @@
+[2025-07-04T16:12:41.788+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retail_etl_dag.clean_data manual__2025-07-04T10:42:31.490943+00:00 [queued]>
+[2025-07-04T16:12:41.794+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retail_etl_dag.clean_data manual__2025-07-04T10:42:31.490943+00:00 [queued]>
+[2025-07-04T16:12:41.795+0530] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-07-04T16:12:41.808+0530] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): clean_data> on 2025-07-04 10:42:31.490943+00:00
+[2025-07-04T16:12:41.811+0530] {standard_task_runner.py:57} INFO - Started process 33209 to run task
+[2025-07-04T16:12:41.818+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'retail_etl_dag', 'clean_data', 'manual__2025-07-04T10:42:31.490943+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/retail_etl_dag.py', '--cfg-path', '/var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T/tmpx80rgho4']
+[2025-07-04T16:12:41.821+0530] {standard_task_runner.py:85} INFO - Job 46: Subtask clean_data
+[2025-07-04T16:12:41.871+0530] {task_command.py:416} INFO - Running <TaskInstance: retail_etl_dag.clean_data manual__2025-07-04T10:42:31.490943+00:00 [running]> on host v-macbook-pro.local
+[2025-07-04T16:12:41.929+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retail_etl_dag' AIRFLOW_CTX_TASK_ID='clean_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-04T10:42:31.490943+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-04T10:42:31.490943+00:00'
+[2025-07-04T16:12:41.932+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T
+[2025-07-04T16:12:41.933+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'spark-submit /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/spark_jobs/clean_data.py --input "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/raw/OnlineRetail.csv" --output "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/data/processed/cleaned_data.csv"']
+[2025-07-04T16:12:41.940+0530] {subprocess.py:86} INFO - Output:
+[2025-07-04T16:12:42.020+0530] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-07-04T16:12:42.024+0530] {subprocess.py:93} INFO -   File "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/bin/find_spark_home.py", line 95, in <module>
+[2025-07-04T16:12:42.025+0530] {subprocess.py:93} INFO -     print(_find_spark_home())
+[2025-07-04T16:12:42.025+0530] {subprocess.py:93} INFO -           ~~~~~~~~~~~~~~~~^^
+[2025-07-04T16:12:42.026+0530] {subprocess.py:93} INFO -   File "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/bin/find_spark_home.py", line 59, in _find_spark_home
+[2025-07-04T16:12:42.026+0530] {subprocess.py:93} INFO -     module_home = os.path.dirname(find_spec("pyspark").origin)
+[2025-07-04T16:12:42.027+0530] {subprocess.py:93} INFO -                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-07-04T16:12:42.027+0530] {subprocess.py:93} INFO - AttributeError: 'NoneType' object has no attribute 'origin'
+[2025-07-04T16:12:42.034+0530] {subprocess.py:93} INFO - /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/bin/spark-submit: line 27: /bin/spark-class: No such file or directory
+[2025-07-04T16:12:42.034+0530] {subprocess.py:93} INFO - /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/bin/spark-submit: line 27: exec: /bin/spark-class: cannot execute: No such file or directory
+[2025-07-04T16:12:42.035+0530] {subprocess.py:97} INFO - Command exited with return code 126
+[2025-07-04T16:12:42.044+0530] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 126.
+[2025-07-04T16:12:42.049+0530] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=retail_etl_dag, task_id=clean_data, execution_date=20250704T104231, start_date=20250704T104241, end_date=20250704T104242
+[2025-07-04T16:12:42.066+0530] {standard_task_runner.py:104} ERROR - Failed to execute job 46 for task clean_data (Bash command failed. The command returned a non-zero exit code 126.; 33209)
+[2025-07-04T16:12:42.076+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-07-04T16:12:42.101+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,15 @@
+[2025-07-04T15:15:46.756+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_xcom.pull_value_from_bash_push manual__2025-07-04T09:37:11.936970+00:00 [queued]>
+[2025-07-04T15:15:46.765+0530] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_xcom.pull_value_from_bash_push manual__2025-07-04T09:37:11.936970+00:00 [queued]>
+[2025-07-04T15:15:46.765+0530] {taskinstance.py:1361} INFO - Starting attempt 2 of 1
+[2025-07-04T15:15:46.789+0530] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): pull_value_from_bash_push> on 2025-07-04 09:37:11.936970+00:00
+[2025-07-04T15:15:46.794+0530] {standard_task_runner.py:57} INFO - Started process 20305 to run task
+[2025-07-04T15:15:46.809+0530] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'example_xcom', 'pull_value_from_bash_push', 'manual__2025-07-04T09:37:11.936970+00:00', '--job-id', '17', '--raw', '--subdir', '/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_xcom.py', '--cfg-path', '/var/folders/53/tbd296vx2878lwlskxvm_8h80000gp/T/tmpmihxu0v4']
+[2025-07-04T15:15:46.818+0530] {standard_task_runner.py:85} INFO - Job 17: Subtask pull_value_from_bash_push
+[2025-07-04T15:15:46.929+0530] {task_command.py:416} INFO - Running <TaskInstance: example_xcom.pull_value_from_bash_push manual__2025-07-04T09:37:11.936970+00:00 [running]> on host v-macbook-pro.local
+[2025-07-04T15:15:47.081+0530] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_xcom' AIRFLOW_CTX_TASK_ID='pull_value_from_bash_push' AIRFLOW_CTX_EXECUTION_DATE='2025-07-04T09:37:11.936970+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-04T09:37:11.936970+00:00'
+[2025-07-04T15:15:47.105+0530] {logging_mixin.py:154} INFO - The xcom value pushed by task push via return value is value_by_return
+[2025-07-04T15:15:47.106+0530] {logging_mixin.py:154} INFO - The xcom value pushed by task push manually is manually_pushed_value
+[2025-07-04T15:15:47.106+0530] {python.py:194} INFO - Done. Returned value was: None
+[2025-07-04T15:15:47.115+0530] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=pull_value_from_bash_push, execution_date=20250704T093711, start_date=20250704T094546, end_date=20250704T094547
+[2025-07-04T15:15:47.178+0530] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-04T15:15:47.206+0530] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

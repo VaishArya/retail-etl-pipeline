@@ -1,0 +1,33 @@
+[2025-07-04T15:05:34.728+0530] {processor.py:157} INFO - Started process (PID=19168) to work on /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:05:34.729+0530] {processor.py:829} INFO - Processing file /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-07-04T15:05:34.730+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:34.730+0530] {dagbag.py:536} INFO - Filling up the DagBag from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:05:34.781+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:34.781+0530] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-07-04T15:05:34.781+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:05:34.781+0530] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-07-04T15:05:34.782+0530] {processor.py:841} WARNING - No viable dags retrieved from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:05:34.942+0530] {processor.py:179} INFO - Processing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.215 seconds
+[2025-07-04T15:17:15.752+0530] {processor.py:157} INFO - Started process (PID=20517) to work on /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:17:15.754+0530] {processor.py:829} INFO - Processing file /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-07-04T15:17:15.755+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:15.755+0530] {dagbag.py:536} INFO - Filling up the DagBag from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:17:15.806+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:15.805+0530] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-07-04T15:17:15.806+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:17:15.806+0530] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-07-04T15:17:15.806+0530] {processor.py:841} WARNING - No viable dags retrieved from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:17:15.967+0530] {processor.py:179} INFO - Processing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.217 seconds
+[2025-07-04T15:19:25.474+0530] {processor.py:157} INFO - Started process (PID=20888) to work on /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:19:25.475+0530] {processor.py:829} INFO - Processing file /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-07-04T15:19:25.476+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:19:25.476+0530] {dagbag.py:536} INFO - Filling up the DagBag from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:19:25.534+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:19:25.534+0530] {example_local_kubernetes_executor.py:39} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-07-04T15:19:25.535+0530] {logging_mixin.py:154} INFO - [2025-07-04T15:19:25.535+0530] {example_local_kubernetes_executor.py:40} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-07-04T15:19:25.535+0530] {processor.py:841} WARNING - No viable dags retrieved from /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-07-04T15:19:25.718+0530] {processor.py:179} INFO - Processing /Users/vaish/databorn_etl_project/retail_etl/etl_pipeline_project/venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.246 seconds
