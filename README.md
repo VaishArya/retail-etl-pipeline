@@ -6,19 +6,23 @@ A simple, real-world ETL pipeline using **Apache Airflow** and **PySpark** to pr
 
 ## 📦 Project Structure
 etl_pipeline_project/
-├── dags/
-│ └── retail_etl_dag.py
-├── spark_jobs/
-│ ├── clean_data.py
-│ └── aggregate_data.py
-├── data/
-│ ├── raw/
-│ └── processed/
-├── output/
-│ └── final_report.csv
-├── requirements.txt
-└── README.md
-Apply to retail_etl_d...
+├── dags/                       # Apache Airflow DAGs
+│   └── retail_etl_dag.py       # Main DAG definition
+│
+├── spark_jobs/                # PySpark jobs
+│   ├── clean_data.py           # Cleans raw retail data
+│   └── aggregate_data.py       # Aggregates data for reporting
+│
+├── data/                      # Data directories
+│   ├── raw/                    # Contains raw input CSV files
+│   └── processed/              # Cleaned and transformed data
+│
+├── output/                    # Final report or analytics output
+│   └── final_report.csv        # Generated after pipeline runs
+│
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
+
 
 ---
 
